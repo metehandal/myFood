@@ -1,18 +1,18 @@
 # myFood
 
-Food Application with Ionic 
+<h2>Food Application with Ionic</h2> 
 
-ionic start myFood blank --type=angular --capacitor
+<code>ionic start myFood blank --type=angular --capacitor</code>
 
 cd ./myFood
 
 # Directives
 
-ionic g module directives/sharedDirectives --flat
+<code>ionic g module directives/sharedDirectives --flat</code>
 
-ionic g directive directives/parallax 
+<code>ionic g directive directives/parallax</code> 
 
-ionic g directive directives/hideHeader
+<code>ionic g directive directives/hideHeader</code>
  
  
 ![food](https://user-images.githubusercontent.com/97443736/182106176-24ba60db-07a9-475a-9faf-592f58bf3a9b.PNG)
