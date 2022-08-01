@@ -1,27 +1,54 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-slides {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.featured-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-content {
+  --padding-top: 40px;
 }
 
-#container a {
-  text-decoration: none;
+.sticky-row {
+  position: sticky;
+  top: calc(env(safe-area-inset-top) - 30px);
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0px 9px 11px -15px rgb(0, 0, 0, 0.75);
+}
+
+.info-row {
+  background: #fff;
+  position: sticky;
+  top: calc(env(safe-area-inset-top) - 40px);
+  z-index: 2;
+}
+
+ion-refresher {
+  padding-top: calc(env(safe-area-inset-top) + 50px);
+}
+
+ion-searchbar {
+  --icon-color: var(--ion-color-medium);
+}
+
+.location-visible {
+  opacity: 1;
+  transition: .5s;
+}
+
+.location-hidden {
+  opacity: 0;
+  transition: .5s;
 }
